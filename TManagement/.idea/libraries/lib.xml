@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-beans-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/jackson-databind-2.9.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/commons-fileupload-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/mchange-commons-java-0.2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/TM_Service-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-tx-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/TM_Common-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/jackson-core-2.9.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-context-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/TM_Web-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/mybatis-spring-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-jcl-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/aspectjweaver-1.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/mybatis-3.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-jdbc-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-aop-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/protobuf-java-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-core-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-expression-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/spring-web-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/jstl-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TM_Web/target/TM_Web/WEB-INF/lib/mysql-connector-java-8.0.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
