@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,6 +16,8 @@
     <script src="${basePath}/js/contant/menu.js"></script>
     <script>
         $(document).ready(function(){
+            pageSet(1);
+
             $("#btnEcharts").click(function(){
 
                 var cityName=$("#cityNameByWeather").val();
@@ -40,7 +43,7 @@
             $("#btnTree").click(function () {
                 initTree();
             });
-            
+
             $("#btnImg").click(function () {
                 $("#ImgModel").modal("toggle");
             });
@@ -107,9 +110,31 @@
                 }
             });
         }
+
+        function pageSet(obj) {
+            $.ajax({
+                url:"/index/ChangePage/"+obj,
+                success:function (result) {
+                    var pageInfo=result.pageInfo;
+                    var list=result.list;
+                    var t='';
+                    var a="<a onclick='pageSet(1)'>首页</a>";
+                    var b="<a onclick='pageSet("+pageInfo.prePage+")'>上一页</a>";
+                    var c="<a onclick='pageSet("+pageInfo.nextPage+")'>下一页</a>";
+                    var d="<a onclick='pageSet("+pageInfo.pages+")'>尾页</a>";
+                    var e="<label>第"+pageInfo.pageNum+"页/共"+pageInfo.pages+"页</label>";
+                    $.each(list, function(i,item){
+                        t+="<tr><td>"+item.id+"</td><td>"+item.username+"</td><td>"+item.password+"</td><td>"+item.groupId+"</td></tr>";
+                    });
+                    $("#tbody").html(t);
+                    $("#ajaxDiv").html(a+b+c+d+e);
+                }
+            })
+        }
     </script>
 </head>
 <body>
+
     <input type="hidden" id="user_group_id" value="${User.groupId}">
     <div class="container">
         <div class="row">
@@ -155,6 +180,48 @@
             </div>
             <div class="col-md-8">
                 <iframe width="600px" height="400px" id="iframeA"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>id</th>
+                        <th>username</th>
+                        <th>password</th>
+                        <th>groupId</th>
+                    </tr>
+                    <tbody id="tbody">
+                        <%--在pageSet函数中追加--%>
+                    </tbody>
+                </table>
+                <div id="ajaxDiv">
+                        <%--在pageSet函数中追加--%>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>id</th>
+                        <th>username</th>
+                        <th>password</th>
+                        <th>groupId</th>
+                    </tr>
+                    <c:forEach items="${userList}" var="item">
+                        <tr>
+                            <td>${item.id}</td>
+                            <td>${item.username}</td>
+                            <td>${item.password}</td>
+                            <td>${item.groupId}</td>
+                        </tr>
+                    </c:forEach>
+                </table>
+                <a href="/index/ChangePage?page=${page.firstPage}">首页</a>
+                <a href="/index/ChangePage?page=${page.prePage}">上一页</a>
+                <a href="/index/ChangePage?page=${page.nextPage}&maxPage=${page.lastPage}">下一页</a>
+                <a href="/index/ChangePage?page=${page.lastPage}">尾页</a>
+                <label>第${page.pageNum}页/共${page.pages}页</label>
             </div>
         </div>
     </div>
