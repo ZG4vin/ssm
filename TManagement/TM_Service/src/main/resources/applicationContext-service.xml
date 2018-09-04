@@ -15,5 +15,5 @@
     <mvc:annotation-driven/>
 
     <!-- 自动扫描的包名 -->
-    <context:component-scan base-package="com.gavin."/>
+    <context:component-scan base-package="com.gavin"/>
 </beans>

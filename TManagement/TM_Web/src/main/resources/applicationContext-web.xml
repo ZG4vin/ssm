@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xmlns:context="http://www.springframework.org/schema/context"
@@ -16,6 +16,7 @@
 	http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
+	<!-- 引入其他xml文件 -->
 	<import resource="applicationContext-service.xml"></import>
 	<import resource="applicationContext-task.xml"></import>
 	<import resource="applicationContext-file.xml"></import>

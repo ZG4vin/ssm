@@ -80,7 +80,7 @@
         </property>
     </bean>
 
-    <!--扫描数据访问层路径-->
+    <!--扫描数据访问层路径，扫描mapper.xml文件和mapper接口文件-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.gavin.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
