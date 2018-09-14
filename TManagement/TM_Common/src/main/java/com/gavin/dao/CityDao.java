@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Update;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Resource
+@Repository
 public interface CityDao {
     @Select("select * from city")
     List<City> getAllCity();

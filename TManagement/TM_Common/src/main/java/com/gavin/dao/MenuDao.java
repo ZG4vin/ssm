@@ -4,8 +4,7 @@ import com.gavin.bean.Menus;
 import org.apache.ibatis.annotations.ResultMap;
 
 import javax.annotation.Resource;
-
-@Resource
+@Repository
 public interface MenuDao {
 
     @ResultMap("resultMap")

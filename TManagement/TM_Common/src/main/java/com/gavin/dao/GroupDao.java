@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
-
+@Repository
 public interface GroupDao {
 
     @Select("select * from group_menus where group_id=#{groupId}")

@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Select;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Resource
+@Repository
 public interface UserDao {
 
     @Select("select * from user where username=#{username} and password=#{password}")
